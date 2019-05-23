@@ -1,0 +1,27 @@
+{
+  "name": "ts-boilerplate",
+  "version": "0.0.1",
+  "description": "My starting point for Typescript projects.",
+  "main": "./dist/main.js",
+  "author": "Nathan Burchill <nathan@burchill.io>",
+  "license": "MIT",
+  "scripts": {
+      "build": "npx tsc",
+      "start": "npx tsnd ./src/main.ts",
+      "start:prod": "node ./dist/main.js",
+      "test": "npx jest",
+      "watch": "npx tsnd --respawn ./src/main.ts"
+  },
+  "dependencies": {
+    "reflect-metadata": "^0.1.13"
+  },
+  "devDependencies": {
+    "@types/jest": "latest",
+    "@types/node": "latest",
+    "jest": "latest",
+    "ts-jest": "latest",
+    "ts-node-dev": "latest",
+    "tslint": "latest",
+    "typescript": "latest"
+  }
+}
