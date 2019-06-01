@@ -6,22 +6,28 @@
   "author": "Nathan Burchill <nathan@burchill.io>",
   "license": "MIT",
   "scripts": {
-      "build": "npx tsc",
-      "start": "npx tsnd ./src/main.ts",
-      "start:prod": "node ./dist/main.js",
-      "test": "npx jest",
-      "watch": "npx tsnd --respawn ./src/main.ts"
+    "build": "npx tsc",
+    "start": "npx ts-node ./src/main.ts",
+    "start:prod": "node ./dist/main.js",
+    "test": "npx jest",
+    "watch": "npx tsnd --respawn ./src/main.ts",
+    "gendocs": "npx typedoc ./src"
   },
   "dependencies": {
-    "reflect-metadata": "^0.1.13"
+    "reflect-metadata": "latest"
   },
   "devDependencies": {
     "@types/jest": "latest",
     "@types/node": "latest",
     "jest": "latest",
     "ts-jest": "latest",
+    "ts-node": "latest",
     "ts-node-dev": "latest",
     "tslint": "latest",
+    "typedoc": "latest",
     "typescript": "latest"
-  }
+  },
+  "files": [
+    "dist"
+  ]
 }
